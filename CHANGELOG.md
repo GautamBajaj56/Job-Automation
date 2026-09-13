@@ -2,6 +2,16 @@
 
 All notable changes to the Internship Acquisition System.
 
+## [0.1.1] — 2026-09-13
+
+### Git/GitHub Synchronization
+
+- Configured remote: `origin` → `https://github.com/GautamBajaj56/Job-Automation.git`
+- Added `career-ops/` as git submodule (upstream: `career-ops-hq/career-ops` @ commit `e58eb65`)
+- Created `.gitmodules` for submodule tracking
+- Pushed 2 commits to `origin/main` with upstream tracking configured
+- Verified: branch up to date with `origin/main`, no credential issues
+
 ## [0.1.0] — 2026-09-13
 
 ### Phase 0 — Project Safety and State

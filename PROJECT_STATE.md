@@ -86,13 +86,22 @@ portals.yml               →     modes/email.md (draft email) →    interview-
 
 # Files
 
+## GitHub Repository
+
+**https://github.com/GautamBajaj56/Job-Automation.git**
+
+- Remote: `origin`
+- Branch: `main`
+- career-ops tracked as git submodule (upstream: `career-ops-hq/career-ops`)
+
 ## Workspace Root (`c:\Users\Lenovo\Desktop\intern\`)
 | File | Purpose |
 |---|---|
 | `.gitignore` | Excludes secrets, PII, IDE artifacts |
+| `.gitmodules` | Git submodule configuration (career-ops) |
 | `PROJECT_STATE.md` | This file — persistent project state |
 | `CHANGELOG.md` | Change history |
-| `career-ops/` | Cloned career-ops v1.32.0 |
+| `career-ops/` | Cloned career-ops v1.32.0 (git submodule) |
 
 ## career-ops Key Directories
 | Directory | Purpose |
@@ -247,3 +256,6 @@ Features verified by smoke test on 2026-09-13:
 | 2026-09-13 | Phase 4 | Verified | `doctor.mjs` — passed (5 warnings for pending user setup) |
 | 2026-09-13 | Phase 4 | Verified | `verify-pipeline.mjs` — passed (fresh setup, no applications.md) |
 | 2026-09-13 | Phase 5 | Documented | Architecture map, file structure, capabilities |
+| 2026-09-13 | Git sync | Configured | Remote origin → https://github.com/GautamBajaj56/Job-Automation.git |
+| 2026-09-13 | Git sync | Added | career-ops as git submodule (upstream: career-ops-hq/career-ops @ e58eb65) |
+| 2026-09-13 | Git sync | Pushed | 2 commits to origin/main (branch set to track upstream) |
