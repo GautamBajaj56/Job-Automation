@@ -142,17 +142,19 @@ portals.yml               →     modes/email.md (draft email) →    interview-
 # Configuration
 
 ## Created / Available
-- `config/profile.example.yml` — Template for user profile (NOT yet customized)
-- `modes/_profile.template.md` — Template for targeting narrative (NOT yet customized)
-- `templates/portals.example.yml` — Template for portal configuration (NOT yet customized)
-- `.env.example` — Template for API keys (NOT yet configured)
+- `config/profile.example.yml` — Template for user profile
+- `modes/_profile.template.md` — Template for targeting narrative
+- `templates/portals.example.yml` — Template for portal configuration
+- `.env.example` — Template for API keys
+- `config/profile.yml` — TEST DATA profile
+- `modes/_profile.md` — TEST DATA targeting narrative
+- `cv.md` — TEST DATA resume
+- `portals.yml` — TEST DATA portals
+
+*Note: All current profiles and CVs use fictional test data ("TEST CANDIDATE") purely for configuration pipeline validation. No real PII is stored.*
 
 ## NOT Configured
 - No `.env` file created (no API keys entered)
-- No `cv.md` created (no resume data)
-- No `config/profile.yml` created (no personal profile)
-- No `modes/_profile.md` created (no targeting narrative)
-- No `portals.yml` created (no company targets)
 
 # External Services
 
@@ -179,13 +181,18 @@ Features verified by smoke test on 2026-09-13:
 - [x] Project structure created with all expected directories
 - [x] `data/pipeline.md` auto-created
 - [x] Git repository initialized at workspace root
+- [x] Test profile configuration (`config/profile.yml` - TEST DATA)
+- [x] Test CV creation (`cv.md` - TEST DATA)
+- [x] Test targeting narrative (`modes/_profile.md` - TEST DATA)
+- [x] Test portal configuration (`portals.yml` - TEST DATA)
+- [x] Configuration validated (`doctor.mjs` warnings resolved)
 
 # Not Yet Implemented
 
-- [ ] User profile configuration (`config/profile.yml`)
-- [ ] CV creation (`cv.md`)
-- [ ] Targeting narrative (`modes/_profile.md`)
-- [ ] Portal configuration (`portals.yml`)
+- [ ] REAL user profile configuration
+- [ ] REAL CV creation
+- [ ] REAL targeting narrative
+- [ ] REAL portal configuration
 - [ ] API key configuration (`.env`)
 - [ ] MCP server configuration for Playwright
 - [ ] Delhi/NCR location preferences
@@ -259,3 +266,5 @@ Features verified by smoke test on 2026-09-13:
 | 2026-09-13 | Git sync | Configured | Remote origin → https://github.com/GautamBajaj56/Job-Automation.git |
 | 2026-09-13 | Git sync | Added | career-ops as git submodule (upstream: career-ops-hq/career-ops @ e58eb65) |
 | 2026-09-13 | Git sync | Pushed | 2 commits to origin/main (branch set to track upstream) |
+| 2026-09-13 | Config Valid | Configured | Initialized cv.md, profile.yml, _profile.md, portals.yml with TEST DATA |
+| 2026-09-13 | Config Valid | Verified | doctor.mjs passes with 1 warning (MCP missing). Profile loads correctly. |

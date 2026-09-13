@@ -2,6 +2,19 @@
 
 All notable changes to the Internship Acquisition System.
 
+## [0.1.2] — 2026-09-13
+
+### Configuration Pipeline Validation
+
+- Initialized required career-ops configuration files with sanitized test data.
+- Created `config/profile.yml` (TEST CANDIDATE profile).
+- Created `cv.md` (TEST CANDIDATE resume).
+- Created `modes/_profile.md` (test targeting narrative).
+- Created `portals.yml` (test portal config).
+- Ran `doctor.mjs`: successfully validated all configuration files. 4 missing file warnings resolved.
+- Ran `cv-sync-check.mjs`: successfully verified profile schema and CV structure match.
+- Profile loading test passed without external API calls or real PII leakage.
+
 ## [0.1.1] — 2026-09-13
 
 ### Git/GitHub Synchronization
