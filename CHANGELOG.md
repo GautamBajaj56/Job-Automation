@@ -12,6 +12,7 @@ All notable changes to the Internship Acquisition System.
 - Configured the candidate profile (`config/profile.yml`) to target "Full-Stack Developer Intern / Software Engineer Intern" roles with location preferences of Delhi/NCR and Remote, specifically seeking Paid internships.
 - Drafted the primary targeting narrative (`modes/_profile.md`) to evaluate MERN/Full-stack/Node.js signals highly, and Python/AI signals as secondary differentiators. Unpaid roles are marked as a hard block.
 - Ran local verification (`doctor.mjs`, `cv-sync-check.mjs`, `verify-pipeline.mjs`) and confirmed consistency. No PII was exposed or committed.
+- Executed the first real AI job evaluation on the Anthropic "AI Operations Engineer, Partnerships" test job to measure baseline scoring accuracy. System correctly identified the geo-mismatch and experience gap, scoring it 1.5/5 (Fail).
 
 ## [0.1.4] — 2026-09-13
 

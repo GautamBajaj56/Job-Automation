@@ -191,10 +191,11 @@ Features verified by smoke test on 2026-09-13:
 - [x] Privacy and Git safety checks validated (real PII is ignored)
 - [x] Configuration validated locally (`doctor.mjs` & `cv-sync-check.mjs` passed)
 
+- [x] First real AI Job Evaluation test completed (Anthropic test job)
+
 # Not Yet Implemented
 
 - [ ] Real target company list (`portals.yml` expansion)
-- [ ] Real AI Job Evaluation test
 - [ ] REAL portal configuration
 - [ ] API key configuration (`.env`)
 - [ ] Delhi/NCR location preferences
