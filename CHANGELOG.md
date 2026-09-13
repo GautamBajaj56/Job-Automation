@@ -14,6 +14,15 @@ All notable changes to the Internship Acquisition System.
 - Ran local verification (`doctor.mjs`, `cv-sync-check.mjs`, `verify-pipeline.mjs`) and confirmed consistency. No PII was exposed or committed.
 - Executed the first real AI job evaluation on the Anthropic "AI Operations Engineer, Partnerships" test job to measure baseline scoring accuracy. System correctly identified the geo-mismatch and experience gap, scoring it 1.5/5 (Fail).
 
+## [0.3.0] — 2026-09-13
+
+### Initial Target Company Universe Built
+
+- Built an initial dataset (`data/target-companies.json`) of 51 target technology companies with engineering footprints in India (Delhi/NCR) or Remote.
+- Utilized `career-ops` ATS discovery tools (`discover-ats.mjs`) to scan the public APIs of Greenhouse, Lever, Ashby, SmartRecruiters, and Pinpoint to determine which companies currently have active ATS systems.
+- Successfully resolved 27 companies to scannable ATS boards with active open roles, while 24 were identified as valid but currently listing 0 open roles.
+- Replaced the Anthropic technical test target in `portals.yml` with a curated set of the top resolved targets to prepare for automated job scanning. Historical Anthropic evaluation is preserved in `reports/001-anthropic-2026-09-13.md`.
+
 ## [0.1.4] — 2026-09-13
 
 ### Safe, Read-Only Direct ATS Discovery Test
