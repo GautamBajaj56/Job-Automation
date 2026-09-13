@@ -194,6 +194,7 @@ Features verified by smoke test on 2026-09-13:
 - [x] First real AI Job Evaluation test completed (Anthropic test job)
 
 - [x] REAL portal configuration (`portals.yml` verified and filtered)
+- [x] First real Paid Full-Stack Internship Discovery Scan (0 matches found)
 - [ ] API key configuration (`.env`)
 - [ ] Delhi/NCR location preferences
 - [ ] Internship-specific scoring rules

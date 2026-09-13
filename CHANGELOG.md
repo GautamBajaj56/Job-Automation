@@ -23,6 +23,15 @@ All notable changes to the Internship Acquisition System.
 - Successfully resolved 27 companies to scannable ATS boards with active open roles, while 24 were identified as valid but currently listing 0 open roles.
 - Replaced the Anthropic technical test target in `portals.yml` with a curated set of the top resolved targets to prepare for automated job scanning. Historical Anthropic evaluation is preserved in `reports/001-anthropic-2026-09-13.md`.
 
+## [0.3.2] — 2026-09-13
+
+### First Real Internship Discovery Scan
+
+- Executed the first live automated job discovery scan (`career-ops scan`) against the top 13 verified target companies configured in `portals.yml`.
+- Scanned 1,408 active job listings, applying positive/negative title filters to isolate "intern/fresher" roles, resulting in 81 new matches added to the pipeline.
+- Conducted an AI evaluation of the most promising software engineering intern roles from Vercel, Coinbase, Stripe, and Postman.
+- **Discovery Failure Identified:** 100% of the shortlisted roles were classified as Tier C (Reject) due to severe geographic incompatibility (e.g., US-only, Hybrid-SF, London) and false positive title matches (e.g., "Internal Systems" matching the "intern" keyword). 0 matching internships for a Delhi/NCR student were found.
+
 ## [0.3.1] — 2026-09-13
 
 ### Target Universe Verification & Ranking
