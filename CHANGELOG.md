@@ -2,6 +2,17 @@
 
 All notable changes to the Internship Acquisition System.
 
+## [0.1.3] — 2026-09-13
+
+### Browser Capability Audit
+
+- Investigated `career-ops` Playwright MCP dependency and Antigravity's capabilities.
+- Confirmed Playwright MCP is optional and unnecessary for this environment.
+- `career-ops` supports a native CLI extractor (`browser-extract.mjs`) for headless scraping.
+- PDF generation uses the local `playwright` node module directly, not the MCP server.
+- Antigravity already natively provides the `browser_subagent` capability for broad browsing tasks.
+- Documented that the remaining `doctor.mjs` warning can be safely ignored.
+
 ## [0.1.2] — 2026-09-13
 
 ### Configuration Pipeline Validation

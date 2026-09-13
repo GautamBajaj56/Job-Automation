@@ -194,7 +194,6 @@ Features verified by smoke test on 2026-09-13:
 - [ ] REAL targeting narrative
 - [ ] REAL portal configuration
 - [ ] API key configuration (`.env`)
-- [ ] MCP server configuration for Playwright
 - [ ] Delhi/NCR location preferences
 - [ ] Internship-specific scoring rules
 - [ ] Job discovery / portal scanning
@@ -213,7 +212,7 @@ Features verified by smoke test on 2026-09-13:
 # Known Issues
 
 1. **PowerShell ExecutionPolicy**: Default policy is `Restricted`, blocking npm/pnpm .ps1 scripts. Workaround: `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` per session.
-2. **Playwright MCP not configured**: `doctor.mjs` warns that Playwright MCP tools are not detected. This is needed for browser-based portal scanning. Solution: Configure MCP server or install Playwright plugin.
+2. **Playwright MCP not configured**: `doctor.mjs` warns that Playwright MCP tools are not detected. **This warning can be safely ignored.** `career-ops` provides a CLI extractor alternative (`browser-extract.mjs`) that uses the local Playwright installation. PDF generation also uses the local Playwright installation directly. Furthermore, Antigravity natively provides browser interaction capabilities.
 3. **sqlite3 not on PATH**: No SQLite CLI available. Not critical — career-ops uses files as canonical store and SQLite only as derived index.
 4. **GitHub CLI not installed**: Cannot use `gh` commands. Not blocking for current phase.
 5. **pnpm blocked**: pnpm installed but blocked by ExecutionPolicy. Not needed — npm works.
@@ -268,3 +267,4 @@ Features verified by smoke test on 2026-09-13:
 | 2026-09-13 | Git sync | Pushed | 2 commits to origin/main (branch set to track upstream) |
 | 2026-09-13 | Config Valid | Configured | Initialized cv.md, profile.yml, _profile.md, portals.yml with TEST DATA |
 | 2026-09-13 | Config Valid | Verified | doctor.mjs passes with 1 warning (MCP missing). Profile loads correctly. |
+| 2026-09-13 | Audit | Decision | Playwright MCP is unnecessary. CLI extractor and Antigravity native browser will be used instead. |
