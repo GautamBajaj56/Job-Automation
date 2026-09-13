@@ -193,8 +193,7 @@ Features verified by smoke test on 2026-09-13:
 
 - [x] First real AI Job Evaluation test completed (Anthropic test job)
 
-- [x] Real target company list (`portals.yml` expansion) and `target-companies.json` generated
-- [ ] REAL portal configuration
+- [x] REAL portal configuration (`portals.yml` verified and filtered)
 - [ ] API key configuration (`.env`)
 - [ ] Delhi/NCR location preferences
 - [ ] Internship-specific scoring rules

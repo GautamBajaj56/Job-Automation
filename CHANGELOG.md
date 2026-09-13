@@ -23,6 +23,15 @@ All notable changes to the Internship Acquisition System.
 - Successfully resolved 27 companies to scannable ATS boards with active open roles, while 24 were identified as valid but currently listing 0 open roles.
 - Replaced the Anthropic technical test target in `portals.yml` with a curated set of the top resolved targets to prepare for automated job scanning. Historical Anthropic evaluation is preserved in `reports/001-anthropic-2026-09-13.md`.
 
+## [0.3.1] — 2026-09-13
+
+### Target Universe Verification & Ranking
+
+- Performed a deep verification pass over the initial 51-company dataset (`career-ops/data/target-companies.json`), ranking targets 0-100 on internship evidence, full-stack relevance, geography, current hiring, and application accessibility.
+- Successfully stratified the dataset into Tiers A (11), B (11), C (23), and D (6), eliminating strictly senior freelance networks (Toptal, Turing, Andela, Deel) as false positive D-tier targets.
+- Identified 24 highly relevant companies with direct Delhi/NCR presence (Paytm, Zomato, Innovaccer, Cars24, MakeMyTrip, etc.) and explicitly flagged India-compatible remote targets.
+- Updated `portals.yml` to contain only the top 13 highest-confidence operational scan targets (Tier A and top Tier B) that currently expose active ATS boards, reducing scanning noise while preserving the full universe in JSON.
+
 ## [0.1.4] — 2026-09-13
 
 ### Safe, Read-Only Direct ATS Discovery Test
