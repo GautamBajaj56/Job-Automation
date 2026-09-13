@@ -184,18 +184,17 @@ Features verified by smoke test on 2026-09-13:
 - [x] Project structure created with all expected directories
 - [x] `data/pipeline.md` auto-created
 - [x] Git repository initialized at workspace root
-- [x] Test profile configuration (`config/profile.yml` - TEST DATA)
-- [x] Test CV creation (`cv.md` - TEST DATA)
-- [x] Test targeting narrative (`modes/_profile.md` - TEST DATA)
-- [x] Test portal configuration (`portals.yml` - TEST DATA)
-- [x] Configuration validated (`doctor.mjs` warnings resolved)
-- [x] Safe, Read-Only Direct ATS Discovery Test (Verified on Greenhouse/Anthropic via API)
+- [x] Master CV configured (`cv.md` - REAL CANDIDATE)
+- [x] Target profile established (Paid Full-Stack/Software Engineer Intern, Delhi/Remote)
+- [x] Real candidate profile configured (`config/profile.yml` - REAL CANDIDATE)
+- [x] Real targeting narrative configured (`modes/_profile.md` - REAL CANDIDATE)
+- [x] Privacy and Git safety checks validated (real PII is ignored)
+- [x] Configuration validated locally (`doctor.mjs` & `cv-sync-check.mjs` passed)
 
 # Not Yet Implemented
 
-- [ ] REAL user profile configuration
-- [ ] REAL CV creation
-- [ ] REAL targeting narrative
+- [ ] Real target company list (`portals.yml` expansion)
+- [ ] Real AI Job Evaluation test
 - [ ] REAL portal configuration
 - [ ] API key configuration (`.env`)
 - [ ] Delhi/NCR location preferences

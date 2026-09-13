@@ -2,6 +2,17 @@
 
 All notable changes to the Internship Acquisition System.
 
+## [0.2.0] — 2026-09-13
+
+### Real Candidate Profile Configuration
+
+- Performed Git privacy check. Verified that `cv.md`, `config/profile.yml`, `modes/_profile.md`, and `portals.yml` are correctly ignored and will not be pushed to the public repository.
+- Replaced the TEST CANDIDATE data with the real factual candidate information using the provided master resume.
+- Generated the Master CV (`cv.md`) containing actual NSUT education, SoCTeamup Internship, and real full-stack/AI projects without hallucinating or fabricating information.
+- Configured the candidate profile (`config/profile.yml`) to target "Full-Stack Developer Intern / Software Engineer Intern" roles with location preferences of Delhi/NCR and Remote, specifically seeking Paid internships.
+- Drafted the primary targeting narrative (`modes/_profile.md`) to evaluate MERN/Full-stack/Node.js signals highly, and Python/AI signals as secondary differentiators. Unpaid roles are marked as a hard block.
+- Ran local verification (`doctor.mjs`, `cv-sync-check.mjs`, `verify-pipeline.mjs`) and confirmed consistency. No PII was exposed or committed.
+
 ## [0.1.4] — 2026-09-13
 
 ### Safe, Read-Only Direct ATS Discovery Test
