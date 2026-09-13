@@ -2,6 +2,17 @@
 
 All notable changes to the Internship Acquisition System.
 
+## [0.1.4] — 2026-09-13
+
+### Safe, Read-Only Direct ATS Discovery Test
+
+- Configured a single technical test target: Anthropic (via Greenhouse public ATS) in `portals.yml`.
+- Ran `node scan.mjs` to retrieve live job listings using a read-only WebFetch scan.
+- Successfully retrieved 111 job listings without requiring the Playwright MCP or any authentication.
+- Extracted a full job description using the CLI extractor (`browser-extract.mjs`) to verify data quality.
+- Confirmed that title, company, location, and full description (including compensation details) are successfully retrieved and suitable for AI scoring.
+- Verified zero unintended actions: no applications submitted, no credentials created, no emails sent.
+
 ## [0.1.3] — 2026-09-13
 
 ### Browser Capability Audit

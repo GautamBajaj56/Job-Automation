@@ -168,6 +168,9 @@ portals.yml               →     modes/email.md (draft email) →    interview-
 - Notion plugin (for syncing to Notion)
 - Apify plugin (for additional job source scraping)
 
+## Technical Test Endpoints (Safe/Read-only)
+- Greenhouse API (`https://boards-api.greenhouse.io/v1/boards/anthropic/jobs`) — Verified for read-only ATS discovery test. No credentials used.
+
 # Implemented Features
 
 Features verified by smoke test on 2026-09-13:
@@ -186,6 +189,7 @@ Features verified by smoke test on 2026-09-13:
 - [x] Test targeting narrative (`modes/_profile.md` - TEST DATA)
 - [x] Test portal configuration (`portals.yml` - TEST DATA)
 - [x] Configuration validated (`doctor.mjs` warnings resolved)
+- [x] Safe, Read-Only Direct ATS Discovery Test (Verified on Greenhouse/Anthropic via API)
 
 # Not Yet Implemented
 
