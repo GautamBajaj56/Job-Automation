@@ -195,8 +195,8 @@ Features verified by smoke test on 2026-09-13:
 
 - [x] REAL portal configuration (`portals.yml` verified and filtered)
 - [x] First real Paid Full-Stack Internship Discovery Scan (0 matches found)
+- [x] Calibrated discovery filters (Fixed substring false positives & added India/NCR location filters)
 - [ ] API key configuration (`.env`)
-- [ ] Delhi/NCR location preferences
 - [ ] Internship-specific scoring rules
 - [ ] Job discovery / portal scanning
 - [ ] Batch evaluation

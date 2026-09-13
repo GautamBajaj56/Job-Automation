@@ -23,6 +23,18 @@ All notable changes to the Internship Acquisition System.
 - Successfully resolved 27 companies to scannable ATS boards with active open roles, while 24 were identified as valid but currently listing 0 open roles.
 - Replaced the Anthropic technical test target in `portals.yml` with a curated set of the top resolved targets to prepare for automated job scanning. Historical Anthropic evaluation is preserved in `reports/001-anthropic-2026-09-13.md`.
 
+## [0.3.3] — 2026-09-13
+
+### Discovery Filter Calibration (Geography & Substring Bugfixes)
+
+- **Identified Root Cause:** The `intern` title filter behaved as a raw substring, catching full-time roles with `Internal` or `International`. Further, the scan lacked a `location_filter`, resulting in high noise from US/UK/Canada internship programs.
+- **Title Filter Fix:** Replaced `"intern"` with anchored `"word:intern"` and `"word:interns"` in `portals.yml`'s positive title filters, utilizing career-ops's native prefix syntax for whole-word boundary matching.
+- **Geography Filter Fix:** Implemented a targeted `location_filter` in `portals.yml`, allowing `[Delhi, Noida, Gurgaon, India, Bengaluru, Remote]` and hard-blocking non-relevant global hubs `[United States, UK, Canada, Australia, Europe, San Francisco, New York]`.
+- **Before vs After Testing:** 
+  - *Before:* 1,408 raw jobs → 1,319 filtered by title → 0 filtered by location → 89 matches.
+  - *After:* 1,408 raw jobs → 1,329 filtered by title → 52 filtered by location → 27 matches.
+  - *Result:* False positives like "Internal Systems" and "Internal Audit" were successfully removed (10 additional title rejections). US/UK internships from Coinbase, Vercel, and Postman were cleanly rejected (52 location rejections). Correctly captured valid matches like "Paytm - HR Payroll-Intern - Noida" and "Stripe - Software Engineer, Intern - Bengaluru".
+
 ## [0.3.2] — 2026-09-13
 
 ### First Real Internship Discovery Scan
