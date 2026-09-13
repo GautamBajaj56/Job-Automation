@@ -23,6 +23,15 @@ All notable changes to the Internship Acquisition System.
 - Successfully resolved 27 companies to scannable ATS boards with active open roles, while 24 were identified as valid but currently listing 0 open roles.
 - Replaced the Anthropic technical test target in `portals.yml` with a curated set of the top resolved targets to prepare for automated job scanning. Historical Anthropic evaluation is preserved in `reports/001-anthropic-2026-09-13.md`.
 
+## [0.3.4] — 2026-09-13
+
+### Target Company Universe Expansion (India/NCR Focus)
+
+- **Dataset Expanded:** Added 48 highly relevant tech companies to `target-companies.json`, bringing the total universe to 99 companies. 
+- **Evidence-Driven Discovery:** Shifted focus away from generic FAANG/unicorns to companies with strong engineering cultures, high probability of intern hiring, and explicit geographic compatibility for a Delhi-based candidate.
+- **Geographic Coverage:** Identified 17 prime targets physically located in Delhi/NCR (e.g., Wingify, Shiprocket, Classplus) and 31 India-remote/SaaS startups (e.g., Appsmith, ToolJet, Cleartax, Groww).
+- **Operational Shift:** Updated `portals.yml` to replace strictly US-based targets with 38 of the newly discovered, highly-ranked Indian startups that use supported ATS platforms (Greenhouse/Lever), dramatically increasing the probability of a successful match in the next job discovery scan.
+
 ## [0.3.3] — 2026-09-13
 
 ### Discovery Filter Calibration (Geography & Substring Bugfixes)
